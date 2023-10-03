@@ -58,27 +58,12 @@ void loop(){
     //Serial.print("\tZ : ");
     z = (mpu.getAngleZ());
     
-//    z = z%360 ; 
-//    if (z < 0) {
-//        z = z + 360; 
-//      }
 
-//    Serial.print("X : ");
-//    Serial.println(x);        // pitch up down is ok   
+    mpu.setAddress(MPU2);
+    mpu.update(); 
+    y = (mpu.getAngleZ());
+    mpu.setAddress(MPU1);
 
-//    Serial.print("z : ");
-//    Serial.println(z);          // yaw is stack  
-
-
-            mpu.setAddress(MPU2);
-            mpu.update(); 
-            y = (mpu.getAngleZ());
-            mpu.setAddress(MPU1);
-
-//    Serial.print("       Z : ");
-//    Serial.println(z);             
-
-  //Serial.println("--------------------------------------");
   itoa (x, xx , 10 );
   itoa (y, yy , 10 );
   itoa (z, zz , 10 );
@@ -100,44 +85,3 @@ void loop(){
   
  
 }
-//
-//void GetMpuValue(const int MPU){
-//  Wire.beginTransmission(MPU); 
-//  Wire.write(0x3B);
-//  Wire.endTransmission();
-//  Wire.requestFrom(MPU,6);
-//  while(Wire.available() < 6);
-//  accelX = Wire.read()<<8|Wire.read(); 
-//  accelY = Wire.read()<<8|Wire.read(); 
-//  accelZ = Wire.read()<<8|Wire.read();
-//  
-//  Wire.beginTransmission(MPU);
-//  Wire.write(0x43);
-//  Wire.endTransmission();
-//  Wire.requestFrom(MPU,6);
-//  while(Wire.available() < 6);
-//  gyroX = Wire.read()<<8|Wire.read();
-//  gyroY = Wire.read()<<8|Wire.read();
-//  gyroZ = Wire.read()<<8|Wire.read(); 
-//
-//
-//  gForceX = accelX / 16384.0;
-//  gForceY = accelY / 16384.0; 
-//  gForceZ = accelZ / 16384.0;
-//  rotX = gyroX / 131.0;
-//  rotY = gyroY / 131.0; 
-//  rotZ = gyroZ / 131.0;
-//  Serial.print("gyro\t");
-//  Serial.print(rotX);
-//  Serial.print("\t");
-//  Serial.print(rotY);
-//  Serial.print("\t");
-//  Serial.print(rotZ);
-//  Serial.print("\tAcc\t");
-//  Serial.print(gForceX);
-//  Serial.print("\t");
-//  Serial.print(gForceY);
-//  Serial.print("\t");
-//  Serial.print(gForceZ);
-//  delay(100);
-//}
