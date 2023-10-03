@@ -1,0 +1,14 @@
+# exported by https://3dviewer.net
+newmtl material_0
+Kd 1 1 1
+d 1
+Ka 1 1 1
+Ks 1 1 1
+Ns 1000
+map_Kd AnimalHead_1.jpg
+newmtl material_1
+Kd 1 1 1
+d 1
+Ka 1 1 1
+Ks 1 1 1
+Ns 1000
