@@ -16,48 +16,32 @@ This repository contains the source code and design files for an interactive 3D-
 
 ## Technologies Used
 
-- 3D Modeling: [Specify 3D modeling software used, e.g., Blender]
-- Python: [Specify Python libraries and frameworks used]
-- Arduino: [Specify Arduino board and libraries used]
-- OpenGL: [Explain the use of OpenGL for rendering]
+- 3D Modeling: Blender
+- Python: Python 3.7/3.9 - OpenGL library
+- Arduino: Teensey 3.2 board, MPU6050 light library
 
 ## Getting Started
 
 ### Prerequisites
 
-- [List any prerequisites or dependencies required to run the project]
+- Install necessary packages from requirements.txt in Pycharm
 
 ### Installation
 
-1. [Step-by-step installation instructions, if applicable]
+1. Have Pycharm Installed
+2. Use 3.7/3.9 python Interpreter
+3. Install dependencies from requirements.txt
+4. Connect the model through a usb port using a micro-usb cable
+5. Run the program and choose a port
 
 ### Usage
 
-1. [How to use the software, including any command-line instructions or configuration settings]
+Software updates in real time - you can manually control the object by using the arrow keys if you dont have the model
 
-## Code Structure
-
-- [Briefly describe the structure of your code and file organization]
-
-## Contributing
-
-If you would like to contribute to this project, please open an issue or create a pull request.
-
-## License
-
-This project is licensed under the [License Name, e.g., MIT License] - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- [Mention any acknowledgments or credits for libraries, tutorials, or inspirations]
 
 ## Contact
 
-- [Your Name]
-- Email: [Your Email Address]
-- LinkedIn: [Your LinkedIn Profile]
-
-## Project Status
-
-[Provide an update on the current status of the project, such as ongoing development, completed, or archived.]
+- Liran Segal
+- Email: Lirseg@gmail.com
+- LinkedIn: https://www.linkedin.com/in/liran-segal1
 
